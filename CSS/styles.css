@@ -1,0 +1,299 @@
+body{
+ width: 1440px;
+  height: 2839px;
+ background: #7E1413; 
+ font-family: 'Londrina_Solidregular', Arial, Helvetica, sans-serif;
+z-index:-1;
+}
+/*.vidbody{
+	height: 1707px;
+}*/
+
+ul{
+	display:flex;
+	list-style-type: none;
+	font-family: 'Raleway', sans-serif;
+}
+
+.container{
+	display: grid;
+grid-template-columns: repeat(16, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 5px;
+grid-row-gap: 5px;
+  
+}
+.first{
+	width: 781px;
+	height: 416px;
+	margin:75px 0px 0px 21px;
+}
+h1{
+	font-size: 80px;
+	color: #F1E7A6;
+	grid-column: 2/ -1;
+	font-family: 'Londrina Solid', cursive;
+}
+h2{
+	color: #F1E7A6;
+	grid-column: 2/ 5;
+	font-size:48px;
+	width: 824px;
+height: 96px;
+font-family: 'Raleway', sans-serif;
+}
+#fuck-u{
+	grid-column: 3/ -1;
+	width:700px;
+	display: inline;
+}
+#fuck-u li{
+	margin-bottom:180px;
+}	
+h3{
+	font-size: 24px;
+}	
+#vidDes{
+	grid-column: 2/ -1;
+	color: #F1E7A6;
+	font-family: 'Raleway', sans-serif;
+}
+iframe{
+	grid-column: 2/ -1;
+	box-shadow: 0px 0px 4px #F1E7A6;
+}
+.city{
+	display:flex;
+	flex-direction: row-reverse;
+	font-size: 96px;
+	font-family: 'Londrina Solid', cursive;
+	margin-top:200px;
+}
+nav{
+	grid-column: 2/ -1;
+	width: 1356px;
+	height: 100px;
+	background: #000000;
+}
+.navContents{
+	list-style-type: none;
+	color:white;
+	display:flex;
+	z-index:1;
+	margin-left: 100px;
+}
+/*#dwndrop{
+	
+	margin-bottom: 50px;
+	
+}*/
+.dropdwn{
+	display: inline;
+	grid-column:8 / -1;
+/*	background-color: #7E1413; 
+	width: 314px;
+	height: 311px;
+	box-shadow: 10px 10px 10px 7E1413; */
+	position:fixed;
+	margin-right:500px;
+}
+li{
+	font-size:24px;
+	margin-right:170px;
+}
+article{
+	grid-column: 2/ 4;
+	width: 1356px;
+	height: 665px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 24px;
+}
+.forty{
+	grid-column: 11/ -1;
+	font-size: 55px;
+	width: 524px;
+	height: 452px;
+	font-family: 'Raleway', sans-serif;
+	margin-top:60px;
+	color:black;
+}
+.play{
+	margin-left: 410px;
+	
+}
+.second{
+	grid-column: 2/ 5;
+}
+.two{
+	grid-column: 7/ -1;
+	width: 774px;
+	height: 672px;
+	margin-left: 130px;
+}
+.txt{
+	margin-right: 200px;
+	width: 452px;
+height: 187px;
+}
+#sides{
+	font-size:36px;
+	font-family: 'Raleway', sans-serif;
+}
+#sides li{
+	width:700px;
+}	
+footer{
+	grid-column: 10/ -1;
+}
+.footpara{
+	color: #F1E7A6;
+	grid-column: 2/ 4;
+	width: 714px;
+	height: 130px;
+	font-size: 36px;
+	font-family: 'Raleway', sans-serif;
+}
+#vidTitle{
+	margin: 60px 0px 0xp 0px;
+}
+
+.walkmans{
+	display: inline;
+	grid-column: 4/ -1;
+	width: 500px;
+	/*margin-bottom: 100px; doesnt work*/
+}
+
+.here{
+	display: inline;
+	grid-column: 6/ -1;
+	width: 500px;
+}
+.odd{
+	grid-column: 10/ 11;
+	Width:612px;
+Height:98px;
+}
+#yrs, #yra, #yrb, #yrc, #yrd {
+	margin-bottom: 100px;
+	color: #F1E7A6;
+}	
+.articlePic{
+	grid-column: 3/ -1;
+	width: 1186px;
+height: 655px;
+}
+
+#articlelnk{
+	background: #F1E7A6;
+}
+#about{
+		font-family: 'Raleway', sans-serif;
+	color:black;
+}
+#about1{
+		font-family: 'Raleway', sans-serif;
+	color: #F1E7A6;
+}
+.forAbout{
+	width:870px;
+	grid-column: 4/ -1;
+		font-family: 'Raleway', sans-serif;
+	color:black;
+}
+.aboutTitle{
+	grid-column: 3/ -1;
+	color:#F1E7A6;
+}
+.faq{
+	grid-column: 6/ -1;
+	display: inline;
+}
+.faqS{
+		margin-bottom:50px;
+		grid-column: 7/ -1;
+		
+}		
+#spacing{
+	margin-bottom: 100px;
+}
+.posts,.equip{
+	grid-column: 2/ -1;
+	display:inline;
+}
+/*#forumTitle{
+	grid-column: 4/ -1;
+	width:1000px;
+	background-color: black;
+}*/	
+#fourmPic{
+	grid-column: 5/ -1;
+}
+.questions{
+	grid-column:5/ -1;
+	display:block;
+	color:#F1E7A6;
+}	
+.top{
+	grid-column: 3/ 15;
+	background-color:DEA253;
+	padding-left:220px;
+}	
+.space{
+	margin-bottom: 50px;
+}	
+#texting{
+	height:90px;
+	width:400px;
+	grid-column: 6/ -1;
+}
+.op{
+	grid-column: 6/ -1;
+}	
+#id{
+	grid-column: 3/ -1;
+	display:block;
+}	
+#oddVid{
+	grid-column: 3/-1;
+}
+
+a: visited{
+	color:#F1E7A6;
+}
+a, #review, a:link{
+	color:#F1E7A6;
+	 text-decoration: none;
+}	
+.casing,.casing1,.casing2,.casing3,.casing4, .casing5{
+	width: 220px;
+	height: 65px;
+	background: #F1E7A6;
+	box-shadow: 20px 20px 4px rgba(0, 0, 0, 0.3);
+}	
+.faqlst{
+		grid-column:2/ 3;
+		display:inline;
+}	
+.faqlst li{
+	margin-bottom:20px;
+}
+#faqlst2 li{
+	margin-bottom:110px;
+}		
+	
+.postf{
+		grid-column:6/ -1;
+		display:inline;
+		border: 5px solid black;
+		width: 713px;
+height: 600px;
+}	
+#img{
+	width: 399px;
+height: 323px;
+}
+#pstT{
+	font-family: 'Londrina Solid', cursive;
+	font-size:36px;
+}	
