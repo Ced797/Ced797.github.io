@@ -655,6 +655,12 @@ top: 1796px
 	font-size: 48px;
 	line-height: 56px;
 	color: #FE7E2A;
+	animation-name: first;
+	animation-duration: 7s;
+}
+@keyframes first {
+	0%   { opacity: 0; }
+   100% { opacity: 1; }
 }
 .a6{
 	position: absolute;
@@ -682,6 +688,17 @@ top: 1796px
 	font-size: 48px;
 	line-height: 56px;
 	color: #FE7E2A;
+	animation-name: slidein;
+	animation-duration: 4s;
+
+}
+@keyframes slidein {
+	from{
+left:1123px;
+	}
+	to{
+	left:592px;
+	}
 }
 .a8{
 	position: absolute;
@@ -708,6 +725,16 @@ color: #FE7E2A;
 	font-size: 48px;
 	line-height: 56px;
 	color: #FE7E2A;
+	animation-name: squeeze;
+	animation-duration: 4s;
+}
+@keyframes squeeze {
+	from{
+		width:1px;
+	}
+	to{
+	width:794;
+	}
 }
 .s1{
 	position: absolute;
