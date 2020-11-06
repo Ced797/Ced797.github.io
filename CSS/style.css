@@ -736,6 +736,18 @@ color: #FE7E2A;
 	width:794;
 	}
 }
+.q1,.q2,.q3,.q4,.q5,.q6,.q6a{
+	animation-name: squeeze2;
+	animation-duration: 4s;
+}
+@keyframes squeeze2 {
+	from{
+		width:1px;
+	}
+	to{
+	width:1382px;
+	}
+}
 .s1{
 	position: absolute;
 	width: 900px;
