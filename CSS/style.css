@@ -16,6 +16,13 @@ body{
 	width: 1440px;
 	height: 4198px;
 }
+.n1{
+	position: absolute;
+width:100%;
+height: auto;
+left: 10px;
+top: 400px;
+}
 .nav1{
 	position: absolute;
 width: 617px;
