@@ -1,0 +1,21 @@
+const Sequelize = require('../sequelize');
+const sequelize = require('./../sequelize.js');
+
+const link = sequelize.define('link',{
+	id:{
+		type:Sequelize.INTEGER,
+		primaryKey:true,
+		autoIncrement:true,
+		allowNull:false
+	},
+	lid: {
+	    type:Sequelize.STRING,
+		allowNull: false
+	},
+	linkTitle:{
+		type:Sequelize.STRING,
+		allowNull:false
+	}
+});
+
+module.exports = article;

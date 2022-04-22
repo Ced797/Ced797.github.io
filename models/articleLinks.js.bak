@@ -1,0 +1,36 @@
+const {Sequelize , Model } = require('sequelize');
+const sequelize = require('./../sequelize.js');
+//const Article = require('./articles.js');
+
+/*const Link = sequelize.define('Link', {
+	id:{
+		type:Sequelize.INTEGER,
+		primaryKey:true,
+		autoIncrement:true,
+		allowNull:false
+	},
+	articlelnks:{
+		type:Sequelize.STRING,
+		allowNull:false
+	}
+});
+//links.belongsTo(articles);
+*/
+class Link extends Model {}
+Link.init({
+	id:{
+		type:Sequelize.INTEGER,
+		primaryKey:true,
+		autoIncrement:true,
+		allowNull:false
+	},
+	articlelink:{
+		type:Sequelize.TEXT,
+		allowNull:false
+	}
+},{sequelize, modelName: "link"});
+
+//Link.belongsTo(Article);
+//Article.hasMany(Link);
+
+module.exports = Link;

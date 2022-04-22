@@ -1,0 +1,64 @@
+@use 'variables' as var;
+@use 'mixins' as mix;
+#singleArticle{
+    @include mix.getFonts;
+    @include mix.styleHeader;
+    color:var.$color-light;
+    h2{
+        font-family:var.$fontFamily-decorative;
+        font-size:70px;
+        color:var.$color-light;
+        margin-left:2vw;
+        margin-bottom:2vh;
+    }
+    #divId_0{
+        @include mix.createGrid(auto,2);
+        div{
+            margin-left:2vw;
+            width:40vw;
+            @include mix.styleCaresheets(1);
+            grid-column:1/1;
+            p{
+                font-family: var.$fontFamily-body;
+                line-height:3.5vh;
+                font-size:20px;
+                margin-bottom:4vh;
+            }
+        }
+        div+div{
+            @include mix.styleCaresheets(2);
+            grid-column:2/2;
+        }
+        div+div+div{
+            @include mix.styleCaresheets(3);
+            grid-column:1/1;
+        }
+        div+div+div+div{
+            @include mix.styleCaresheets(4);
+            grid-column:2/2;
+        }
+        div+div+div+div+div{
+            @include mix.styleCaresheets(5);
+            grid-column:1/1;
+        }
+        div+div+div+div+div+div{
+            @include mix.styleCaresheets(6);
+            grid-column:2/2;
+        }
+        div+div+div+div+div+div+div{
+            @include mix.styleCaresheets(7);
+            grid-column:1/1;
+        }
+        div+div+div+div+div+div+div+div{
+            @include mix.styleCaresheets(8);
+            grid-column:2/2;
+        }
+    }
+    h3{
+        font-family:var.$fontFamily-decorative;
+        font-size:70px;
+        color:#FF8126;
+    }
+    
+    //@include mix.styleFooter;
+}

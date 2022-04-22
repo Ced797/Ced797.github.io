@@ -1,0 +1,32 @@
+doctype html
+html
+head
+    title Inserting articles
+    script(src='https://cdn.tiny.cloud/1/em8phdpbodza3ujcqljnqx8i3ln4nlsus38g2dqtz9zf37vv/tinymce/5/tinymce.min.js' referrerpolicy='origin')
+    script(src='/scripts/editor.js')
+h1 Editing Articles
+br
+br
+form(Method='POST' action='/editArticle/'+article.id)
+  label Edit Title
+  input(type='text' name='newTitle' value= article.title)
+  br
+  br
+  label Edit Overview
+  input(type='text' name='newOverview' value=article.overview)
+  br
+  br
+  label Edit Article
+  textarea#article(name='newArticle') #{article.article}
+  br
+  br
+  input(type='text' value='/images/'+article.image)
+  br
+  br
+  input(type='submit' name='submit' value='Submit Changes')
+p #{article.id} yellow
+each link in links
+  hello #{link.articlelink}
+form(Method='POST' action='')
+  input(type='hidden' value='/editArticle/delete/'+article.id)
+  input(type='submit' value='Delete Article')

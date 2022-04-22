@@ -1,0 +1,52 @@
+@use 'mixins' as mix;
+@use 'variables' as var;
+#ourArticles{
+    @include mix.getFonts;
+    @include mix.styleHeader;
+    h2{
+        font-size:100px;
+        color:#D9D6CB;
+        font-family: "NatureSpiritRegular", serif;
+        margin-left:1vw;
+        width:95vw;
+        text-align:center;
+    }
+    h3{
+        font-size:100px;
+        color:#D9D6CB;
+        font-family: var.$fontFamily-decorative;
+        margin-left:2vw;
+        margin-top:2vh;
+    }
+    #articleList{
+        background-color:var.$color-light;
+        width:80vw;
+        margin-left:6vw;
+        border-radius:var.$border-curve;
+        margin-bottom:10vh;
+    }
+    .articleList{
+        li{
+            a{
+                color:var.$color-dark;
+                font-size:60px;
+            } 
+            p{
+                font-size:30px;
+            }  
+        }
+        div{
+            border-bottom: 3px solid black;;
+        }
+        font-family:var.$fontFamily-decorative;
+        margin-left:2vw;
+        width:90vw;
+        background-color:var.$color-light;
+        color:var.$color-dark;
+        border-radius:var.$border-curve;
+        margin-top:4vh;
+        margin-bottom:4vh;
+        padding:2%;
+    }
+    @include mix.styleFooter;
+}

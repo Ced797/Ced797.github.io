@@ -1,0 +1,10 @@
+head
+  title Single article | #{articles.title}
+  script(src='/scripts/autoGen.js')
+  link(rel="stylesheet" href="/css/styles.css")
+  meta(name="viewport" content="width=device-width, initial-scale=1.0")
+body(id="singleArticle" onload="bod()")
+  include includes/header.pug
+  h2 #{articles.title}
+  div(id="article") !{articles.article}
+  include includes/footer.pug

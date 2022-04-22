@@ -1,0 +1,10 @@
+@use 'reset';
+@use 'variables' as vars;
+@use 'homepage';
+@use 'articleList';
+@use 'survey';
+@use 'singleDisplay';
+@use 'careSheets';
+html{
+    background-color:#0F1426;
+}

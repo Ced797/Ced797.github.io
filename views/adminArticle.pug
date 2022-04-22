@@ -1,0 +1,44 @@
+doctype html
+html
+  head
+    title Inserting articles
+    script(src='https://cdn.tiny.cloud/1/em8phdpbodza3ujcqljnqx8i3ln4nlsus38g2dqtz9zf37vv/tinymce/5/tinymce.min.js' referrerpolicy='origin')
+    script(src='/scripts/admin/script.js')
+    script(src='/scripts/editor.js')
+  body
+  form(method='POST')
+    label Title of Article
+    input(type='text' name='title')
+    br
+    br
+    label Overview
+    textarea(name='overview')
+    br
+    br
+    label Article
+    textarea#article(name='article')
+    br
+    br
+    label Links
+    input(type='text' name='link')
+    br
+    br
+    p#hello
+    br
+    br
+    label What type of article is this
+    br
+    select(name='category')
+      each category in categories
+        option(value=category.id name='categoryType') #{category.category}
+    br
+    br
+    label Caresheet Image
+    input(type='text' name='specImage')
+    br
+    br
+    input(type='submit' name='submit')
+    br
+    br
+  button#btn(onclick='addInput()') Add Links
+  script(src='/admin/script.js')

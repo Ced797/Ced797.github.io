@@ -1,0 +1,25 @@
+@use "mixins" as mix;
+@use "variables" as var;
+@include mix.getFonts;
+#reptSurvey{
+    display:grid;
+    grid-template-columns:repeat(8, 1fr);
+    grid-template-rows: repeat(auto,1fr);
+    h1{
+        color:var.$color-light;
+        grid-column:4/8;
+        font-size:80px;
+        font-family:var.$fontFamily-decorative;
+    }
+    div{
+        grid-column:1/1;
+        grid-row:1/1;
+        height:100vh;
+        button{
+            height:35vh;
+            width:30vw;
+            font-family:var.$fontFamily-decorative;
+            font-size:40px;
+        }
+    }
+}

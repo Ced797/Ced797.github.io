@@ -1,0 +1,110 @@
+@use "mixins" as mix;
+@use "variables" as var;
+#homepage{
+    @include mix.getFonts;
+    @include mix.styleHeader;
+    @include mix.styleLinks;
+    #firstTimeSurvey{
+        background-color:var.$color-light;
+        padding:2%;
+        padding-top:1%;
+        @include mix.createGrid(2,3);
+        h2{
+            font-size:var.$fontSize-h2;
+            color:var.$color-dark;
+            justify-content:center;
+            font-family:var.$fontFamily-decorative;
+            width:90vw;
+            text-align:center;
+        }
+        button{
+            font-size:20px;
+            border-radius: var.$border-curve;
+            padding:1%;
+            outline:none;
+            background-color:#5C6E31;
+            color:var.$color-dark;
+            margin-top:1%;
+            margin-left:30vw;
+            font-family:var.$fontFamily-decorative;
+            border:none;
+            width:30vw;
+            grid-row:2/2;
+            grid-column:1/1;
+            cursor:pointer;
+        }
+        img{
+            cursor:pointer;
+            margin-left:3vw;
+        }
+    }
+    #pageTitle{
+        color:var.$color-light;
+        font-size:var.$fontSize-h2;
+        font-family:var.$fontFamily-decorative;
+        margin-top:1%;
+        margin-right:2%;
+        justify-content:center;
+        width:99vw;
+        text-align: center;
+    }
+    #filter{
+        height:140vh;
+        width:85vw;
+        margin-left:4vw;
+        margin-bottom:10vh;
+        margin-top:10vh;
+        background-color:var.$color-light;
+        border-radius:var.$border-curve;
+        padding:2vw;
+        h2{
+            color:var.$color-dark;
+            width:80vw;
+            text-align: center;
+        }
+        input{
+            border-radius:10px;
+            margin-bottom:1vw;
+            padding:1%;
+            padding-right:1vw;
+            outline:none;
+            font-size:35px;
+            font-family:var.$fontFamily-decorative;
+            width:78vw;
+            border:3px solid var.$color-dark;
+            background-color:var.$color-light;
+            color:var.$color-dark;
+        }
+        li{
+            width:25vw;
+            height:35vh;
+            border-radius:var.$border-curve;
+            float:left;
+            margin-right:2vw;
+            margin-bottom:3vh;
+            background-size: 25vw 35vh;
+        }
+        div{
+            background-color:var.$color-dark-transparent;
+            padding-left:1vw;
+            position:relative;
+            top:33vh;
+            border-radius:0px 0px 10px 10px;
+            display:flex;
+            p{
+                font-size:30px;
+                color:var.$color-light;
+            }
+        }
+        li>a{
+           color:var.$color-light;
+           font-size: 45px;
+        }
+    }
+    p{
+        font-family:var.$fontFamily-decorative;
+        color:var.$color-dark;
+        font-size:var.$fontSize-p;
+    }
+    @include mix.styleFooter;
+}

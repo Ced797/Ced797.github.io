@@ -1,0 +1,13 @@
+head
+	title Reptilliant | Articles
+	link(rel="stylesheet" href="/css/styles.css")
+	meta(name="viewport" content="width=device-width, initial-scale=1.0")
+body(id="ourArticles")
+	include includes/header.pug
+	h2 Our Articles
+	div(id="articleList")
+		ul
+			each article in articles
+				li
+					a(href='/singleDisplay/'+ article.id class="articleList") #{article.title}
+	include includes/footer.pug

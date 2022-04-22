@@ -1,0 +1,74 @@
+@use "variables" as var;
+@mixin styleHeader{
+    header{
+        a{
+            color:var.$color-light;
+            text-decoration:none;
+            font-size:var.$fontSize-list;
+            font-family:var.$fontFamily-decorative;
+            margin-right:2%;
+        }
+        a:hover{
+            transition:var.$animation-fade;
+            color:var.$color-accent;
+        }
+        background-image:var.$image-background;
+        padding-left:2%;
+        h1{
+            font-size:var.$fontSize-h1;
+            color:var.$color-light;
+            font-family:var.$fontFamily-decorative;
+        }
+    }
+}
+@mixin createGrid($numRows,$numCols){
+    display:grid;
+    grid-template-columns:repeat($numCols,1fr);
+    grid-template-rows:repeat($numRows,1fr);
+}
+@mixin styleFooter{
+    footer{
+        background-image:var.$image-background;
+        @include createGrid(auto,2);
+        @include styleLinks();
+        p{
+            font-family:"NimitzRough";
+            color:var.$color-light;
+            font-size:30px;
+        }
+        #disclaimer{
+            grid-column:2/2;
+            grid-row:2/2;
+        }
+    }
+}
+@mixin getFonts{
+    @font-face {
+        font-family: "NimitzRough";
+        src: url("/fonts/NimitzRough.otf");
+    }
+    @font-face{
+        font-family:"PlayenSans";
+        src: url("/fonts/PlayenSans-Regular.otf");
+    }
+}
+
+
+@mixin styleCaresheets($rowNum){
+    grid-row-start:$rowNum;
+    grid-row-end: $rowNum;
+}
+
+@mixin styleLinks(){
+    a{
+        color:var.$color-light;
+        text-decoration:none;
+        font-size:var.$fontSize-list;
+        font-family:var.$fontFamily-decorative;
+        margin-right:2%;
+    }
+    a:hover{
+        transition:var.$animation-fade;
+        color:var.$color-accent;
+    }
+}

@@ -1,0 +1,15 @@
+head
+    title Reptilliant | Display Blogs
+    link(rel="stylesheet" href="/css/styles.css")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+body(id="ourArticles")
+    include includes/header.pug
+    h3 Our Blogs
+    ul(class="articleList")
+        each article in articles
+            div
+                li
+                    a(href='/singleDisplay/'+ article.id) #{article.title}
+                li
+                    p #{article.overview}
+    include includes/footer.pug

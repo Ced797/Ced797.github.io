@@ -1,0 +1,4 @@
+ul
+	each article in articles
+		li #{articles.title}
+		li #{articles.article}

@@ -1,0 +1,5 @@
+header
+    h1 Reptilliant
+    a(href='/displayCaresheets') Reptile Collection 
+    a(href="/survey") Reptile Survey 
+    a(href="/displayblogs") Our Blogs

@@ -1,0 +1,39 @@
+head
+    title Reptilliant | Home
+    link(rel="stylesheet" href="/css/styles.css")
+    script(src='/scripts/filter.js')
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(name="msvalidate.01" content="5B9BC1C571D66B888B495729A920F2A0")
+    script.
+        function hideDiv(){
+            let el= document.getElementById("firstTimeSurvey");
+            el.style.display="none";
+        }
+body(id="homepage")
+    include includes/header.pug
+    div(id="firstTimeSurvey")
+        h2(id="h2") New here? Take a look at our blog page or view one of our reptiles!
+        button
+            a(href="/displayblogs") View our Blogs!
+        img(src="/images/closeCircle.svg" alt="close panel" onclick=`hideDiv()`)
+    div(id="filter")
+        h2(id="pageTitle") Reptile information at a glance
+        input#sort(type='text' onkeyup='myFunction()' placeholder='Search your reptiles')
+        ul#articleList(class="articleList")
+          each article in articles
+            li(style="background-image:url('" + article.speciesImage + "')")
+                div
+                    a(href='/singleDisplay/'+ article.id) #{article.title}
+                    ul.likes
+                      li
+                        form(METHOD ='POST' action='/upvote/:'+article.id)
+                          input(type='hidden' name='upvote' value='1')
+                          button(type='submit') +1
+                      li
+                        form(METHOD= 'POST' action='/downvote/:'+article.id)
+                          input(type='hidden' name='downvote' value='-1')
+                          button(type='submit') -1
+                      li
+                        //{articles.likes}
+
+    include includes/footer.pug

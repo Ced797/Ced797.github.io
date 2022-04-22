@@ -1,0 +1,595 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  #homepage {
+    font-family: "NimitzRough";
+    src: url("/fonts/NimitzRough.otf");
+  }
+}
+@font-face {
+  #homepage {
+    font-family: "PlayenSans";
+    src: url("/fonts/PlayenSans-Regular.otf");
+  }
+}
+#homepage header {
+  background-image: url("/images/headerImage.jpg");
+  padding-left: 2%;
+}
+#homepage header a {
+  color: #D9D6CB;
+  text-decoration: none;
+  font-size: 40px;
+  font-family: "NimitzRough", Serif;
+  margin-right: 2%;
+}
+#homepage header a:hover {
+  transition: color 0.3s ease;
+  color: #FF8126;
+}
+#homepage header h1 {
+  font-size: 200px;
+  color: #D9D6CB;
+  font-family: "NimitzRough", Serif;
+}
+#homepage a {
+  color: #D9D6CB;
+  text-decoration: none;
+  font-size: 40px;
+  font-family: "NimitzRough", Serif;
+  margin-right: 2%;
+}
+#homepage a:hover {
+  transition: color 0.3s ease;
+  color: #FF8126;
+}
+#homepage #firstTimeSurvey {
+  background-color: #D9D6CB;
+  padding: 2%;
+  padding-top: 1%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+#homepage #firstTimeSurvey h2 {
+  font-size: 60px;
+  color: #0F1426;
+  justify-content: center;
+  font-family: "NimitzRough", Serif;
+  width: 90vw;
+  text-align: center;
+}
+#homepage #firstTimeSurvey button {
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 1%;
+  outline: none;
+  background-color: #5C6E31;
+  color: #0F1426;
+  margin-top: 1%;
+  margin-left: 30vw;
+  font-family: "NimitzRough", Serif;
+  border: none;
+  width: 30vw;
+  grid-row: 2/2;
+  grid-column: 1/1;
+  cursor: pointer;
+}
+#homepage #firstTimeSurvey img {
+  cursor: pointer;
+  margin-left: 3vw;
+}
+#homepage #pageTitle {
+  color: #D9D6CB;
+  font-size: 60px;
+  font-family: "NimitzRough", Serif;
+  margin-top: 1%;
+  margin-right: 2%;
+  justify-content: center;
+  width: 99vw;
+  text-align: center;
+}
+#homepage #filter {
+  height: 140vh;
+  width: 85vw;
+  margin-left: 4vw;
+  margin-bottom: 10vh;
+  margin-top: 10vh;
+  background-color: #D9D6CB;
+  border-radius: 10px;
+  padding: 2vw;
+}
+#homepage #filter h2 {
+  color: #0F1426;
+  width: 80vw;
+  text-align: center;
+}
+#homepage #filter input {
+  border-radius: 10px;
+  margin-bottom: 1vw;
+  padding: 1%;
+  padding-right: 1vw;
+  outline: none;
+  font-size: 35px;
+  font-family: "NimitzRough", Serif;
+  width: 78vw;
+  border: 3px solid #0F1426;
+  background-color: #D9D6CB;
+  color: #0F1426;
+}
+#homepage #filter li {
+  width: 25vw;
+  height: 35vh;
+  border-radius: 10px;
+  float: left;
+  margin-right: 2vw;
+  margin-bottom: 3vh;
+  background-size: 25vw 35vh;
+}
+#homepage #filter div {
+  background-color: rgba(15, 20, 38, 0.7);
+  padding-left: 1vw;
+  position: relative;
+  top: 33vh;
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+}
+#homepage #filter div p {
+  font-size: 30px;
+  color: #D9D6CB;
+}
+#homepage #filter li > a {
+  color: #D9D6CB;
+  font-size: 45px;
+}
+#homepage p {
+  font-family: "NimitzRough", Serif;
+  color: #0F1426;
+  font-size: 60px;
+}
+#homepage footer {
+  background-image: url("/images/headerImage.jpg");
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+}
+#homepage footer a {
+  color: #D9D6CB;
+  text-decoration: none;
+  font-size: 40px;
+  font-family: "NimitzRough", Serif;
+  margin-right: 2%;
+}
+#homepage footer a:hover {
+  transition: color 0.3s ease;
+  color: #FF8126;
+}
+#homepage footer p {
+  font-family: "NimitzRough";
+  color: #D9D6CB;
+  font-size: 30px;
+}
+#homepage footer #disclaimer {
+  grid-column: 2/2;
+  grid-row: 2/2;
+}
+
+@font-face {
+  #ourArticles {
+    font-family: "NimitzRough";
+    src: url("/fonts/NimitzRough.otf");
+  }
+}
+@font-face {
+  #ourArticles {
+    font-family: "PlayenSans";
+    src: url("/fonts/PlayenSans-Regular.otf");
+  }
+}
+#ourArticles header {
+  background-image: url("/images/headerImage.jpg");
+  padding-left: 2%;
+}
+#ourArticles header a {
+  color: #D9D6CB;
+  text-decoration: none;
+  font-size: 40px;
+  font-family: "NimitzRough", Serif;
+  margin-right: 2%;
+}
+#ourArticles header a:hover {
+  transition: color 0.3s ease;
+  color: #FF8126;
+}
+#ourArticles header h1 {
+  font-size: 200px;
+  color: #D9D6CB;
+  font-family: "NimitzRough", Serif;
+}
+#ourArticles h2 {
+  font-size: 100px;
+  color: #D9D6CB;
+  font-family: "NatureSpiritRegular", serif;
+  margin-left: 1vw;
+  width: 95vw;
+  text-align: center;
+}
+#ourArticles h3 {
+  font-size: 100px;
+  color: #D9D6CB;
+  font-family: "NimitzRough", Serif;
+  margin-left: 2vw;
+  margin-top: 2vh;
+}
+#ourArticles #articleList {
+  background-color: #D9D6CB;
+  width: 80vw;
+  margin-left: 6vw;
+  border-radius: 10px;
+  margin-bottom: 10vh;
+}
+#ourArticles .articleList {
+  font-family: "NimitzRough", Serif;
+  margin-left: 2vw;
+  width: 90vw;
+  background-color: #D9D6CB;
+  color: #0F1426;
+  border-radius: 10px;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  padding: 2%;
+}
+#ourArticles .articleList li a {
+  color: #0F1426;
+  font-size: 60px;
+}
+#ourArticles .articleList li p {
+  font-size: 30px;
+}
+#ourArticles .articleList div {
+  border-bottom: 3px solid black;
+}
+#ourArticles footer {
+  background-image: url("/images/headerImage.jpg");
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+}
+#ourArticles footer a {
+  color: #D9D6CB;
+  text-decoration: none;
+  font-size: 40px;
+  font-family: "NimitzRough", Serif;
+  margin-right: 2%;
+}
+#ourArticles footer a:hover {
+  transition: color 0.3s ease;
+  color: #FF8126;
+}
+#ourArticles footer p {
+  font-family: "NimitzRough";
+  color: #D9D6CB;
+  font-size: 30px;
+}
+#ourArticles footer #disclaimer {
+  grid-column: 2/2;
+  grid-row: 2/2;
+}
+
+@font-face {
+  font-family: "NimitzRough";
+  src: url("/fonts/NimitzRough.otf");
+}
+@font-face {
+  font-family: "PlayenSans";
+  src: url("/fonts/PlayenSans-Regular.otf");
+}
+#reptSurvey {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+}
+#reptSurvey h1 {
+  color: #D9D6CB;
+  grid-column: 4/8;
+  font-size: 80px;
+  font-family: "NimitzRough", Serif;
+}
+#reptSurvey div {
+  grid-column: 1/1;
+  grid-row: 1/1;
+  height: 100vh;
+}
+#reptSurvey div button {
+  height: 35vh;
+  width: 30vw;
+  font-family: "NimitzRough", Serif;
+  font-size: 40px;
+}
+
+@font-face {
+  #singleArticle {
+    font-family: "NimitzRough";
+    src: url("/fonts/NimitzRough.otf");
+  }
+}
+@font-face {
+  #singleArticle {
+    font-family: "PlayenSans";
+    src: url("/fonts/PlayenSans-Regular.otf");
+  }
+}
+#singleArticle header {
+  background-image: url("/images/headerImage.jpg");
+  padding-left: 2%;
+}
+#singleArticle header a {
+  color: #D9D6CB;
+  text-decoration: none;
+  font-size: 40px;
+  font-family: "NimitzRough", Serif;
+  margin-right: 2%;
+}
+#singleArticle header a:hover {
+  transition: color 0.3s ease;
+  color: #FF8126;
+}
+#singleArticle header h1 {
+  font-size: 200px;
+  color: #D9D6CB;
+  font-family: "NimitzRough", Serif;
+}
+#singleArticle .caresheet h3 {
+  color: #D9D6CB;
+  font-family: "NimitzRough", Serif;
+  font-size: 70px;
+  grid-row: 1/1;
+  grid-column: 1/-1;
+  padding-left: 2vw;
+}
+#singleArticle .caresheet h3 + h3 {
+  grid-row: 2/2;
+  grid-column: 1/-1;
+  font-size: 50px;
+  padding-left: 2vw;
+}
+#singleArticle .caresheet h2 {
+  color: #D9D6CB;
+  font-family: "NimitzRough", Serif;
+  font-size: 60px;
+  width: 100vw;
+  text-align: center;
+  margin-top: 3vh;
+  grid-row: 3/3;
+  grid-column: 1/-1;
+}
+#singleArticle .caresheet p {
+  color: #D9D6CB;
+  font-family: "arial", serif;
+}
+#singleArticle .articleList {
+  background-color: #D9D6CB;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 2vh;
+  margin-bottom: 2vw;
+  padding: 1vw;
+  border-radius: 10px;
+}
+#singleArticle footer {
+  background-image: url("/images/headerImage.jpg");
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+}
+#singleArticle footer a {
+  color: #D9D6CB;
+  text-decoration: none;
+  font-size: 40px;
+  font-family: "NimitzRough", Serif;
+  margin-right: 2%;
+}
+#singleArticle footer a:hover {
+  transition: color 0.3s ease;
+  color: #FF8126;
+}
+#singleArticle footer p {
+  font-family: "NimitzRough";
+  color: #D9D6CB;
+  font-size: 30px;
+}
+#singleArticle footer #disclaimer {
+  grid-column: 2/2;
+  grid-row: 2/2;
+}
+
+h2 {
+  font-family: "NimitzRough", Serif;
+  font-size: 60px;
+  width: 100vw;
+  text-align: center;
+  margin-top: 3vh;
+}
+
+article {
+  grid-row: 2/2;
+  color: #0F1426;
+  background-color: #D9D6CB;
+  width: 50vw;
+  border-radius: 10px;
+  padding: 3%;
+  margin-left: 23vw;
+  margin-bottom: 5vh;
+}
+article p {
+  line-height: 3.5vh;
+  margin-bottom: 3vh;
+}
+article p a {
+  font-family: "NimitzRough", Serif;
+  color: #0F1426;
+  font-size: 40px;
+  text-decoration: none;
+}
+article p a:hover {
+  text-decoration: underline;
+}
+
+#singleArticle {
+  color: #D9D6CB;
+}
+@font-face {
+  #singleArticle {
+    font-family: "NimitzRough";
+    src: url("/fonts/NimitzRough.otf");
+  }
+}
+@font-face {
+  #singleArticle {
+    font-family: "PlayenSans";
+    src: url("/fonts/PlayenSans-Regular.otf");
+  }
+}
+#singleArticle header {
+  background-image: url("/images/headerImage.jpg");
+  padding-left: 2%;
+}
+#singleArticle header a {
+  color: #D9D6CB;
+  text-decoration: none;
+  font-size: 40px;
+  font-family: "NimitzRough", Serif;
+  margin-right: 2%;
+}
+#singleArticle header a:hover {
+  transition: color 0.3s ease;
+  color: #FF8126;
+}
+#singleArticle header h1 {
+  font-size: 200px;
+  color: #D9D6CB;
+  font-family: "NimitzRough", Serif;
+}
+#singleArticle h2 {
+  font-family: "NimitzRough", Serif;
+  font-size: 70px;
+  color: #D9D6CB;
+  margin-left: 2vw;
+  margin-bottom: 2vh;
+}
+#singleArticle #divId_0 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+}
+#singleArticle #divId_0 div {
+  margin-left: 2vw;
+  width: 40vw;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column: 1/1;
+}
+#singleArticle #divId_0 div p {
+  font-family: "PlayenSans", serif;
+  line-height: 3.5vh;
+  font-size: 20px;
+  margin-bottom: 4vh;
+}
+#singleArticle #divId_0 div + div {
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column: 2/2;
+}
+#singleArticle #divId_0 div + div + div {
+  grid-row-start: 3;
+  grid-row-end: 3;
+  grid-column: 1/1;
+}
+#singleArticle #divId_0 div + div + div + div {
+  grid-row-start: 4;
+  grid-row-end: 4;
+  grid-column: 2/2;
+}
+#singleArticle #divId_0 div + div + div + div + div {
+  grid-row-start: 5;
+  grid-row-end: 5;
+  grid-column: 1/1;
+}
+#singleArticle #divId_0 div + div + div + div + div + div {
+  grid-row-start: 6;
+  grid-row-end: 6;
+  grid-column: 2/2;
+}
+#singleArticle #divId_0 div + div + div + div + div + div + div {
+  grid-row-start: 7;
+  grid-row-end: 7;
+  grid-column: 1/1;
+}
+#singleArticle #divId_0 div + div + div + div + div + div + div + div {
+  grid-row-start: 8;
+  grid-row-end: 8;
+  grid-column: 2/2;
+}
+#singleArticle h3 {
+  font-family: "NimitzRough", Serif;
+  font-size: 70px;
+  color: #FF8126;
+}
+
+html {
+  background-color: #0F1426;
+}
+
+/*# sourceMappingURL=styles.css.map */

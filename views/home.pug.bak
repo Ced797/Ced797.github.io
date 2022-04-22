@@ -1,0 +1,28 @@
+head
+    title Reptilliant | Home
+    link(rel="stylesheet" href="/css/styles.css")
+    script(src='/scripts/filter.js')
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(name="msvalidate.01" content="5B9BC1C571D66B888B495729A920F2A0")
+    script.
+        function hideDiv(){
+            let el= document.getElementById("firstTimeSurvey");
+            el.style.display="none";
+        }
+body(id="homepage")
+    include includes/header.pug
+    div(id="firstTimeSurvey")
+        h2(id="h2") New here? Take a look at our blog page or view one of our reptiles!
+        button
+            a(href="/displayblogs") View our Blogs!
+        img(src="/images/closeCircle.svg" alt="close panel" onclick=`hideDiv()`)
+    h2(id="pageTitle") Reptile information at a glance
+    div(id="filter")
+        p Filter your reptiles by name:
+        input#myInput(type='text' onkeyup='myFunction()' placeholder='Searh your reptile')
+        ul#articleList(class="articleList")
+          each article in articles
+            li(style="background-image:url('" + article.speciesImage + "')")
+              a(href='/singleDisplay/'+ article.id) #{article.title}
+    div(id="allReptiles")
+    include includes/footer.pug

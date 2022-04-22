@@ -1,0 +1,36 @@
+//function bod(){
+	let para = document.querySelectorAll('p');
+	let h2 = document.querySelectorAll('h2');
+	let span = document.querySelectorAll('span');
+	
+	if(document.body)
+	{
+		for(let i = 0; i < para.length; i++)
+		{
+			para[i].setAttribute("class","paraClass_"+i);
+			para[i].setAttribute("id","paraId_"+i);
+		}
+		
+	}
+	if(document.body)
+	{
+		for(let i = 0; i < h1.length; i++)
+		{
+			h2[i].setAttribute("class","h2Class_"+i);
+			h2[i].setAttribute("id","h2Id_"+i);
+		}
+		
+	}
+	if(document.body)
+	{
+		for(let i = 0; i < span.length; i++)
+		{
+			span[i].setAttribute("class","spanClass_"+i);
+			span[i].setAttribute("id","spanId_"+i);
+		}
+		
+	}
+
+//}
+
+

@@ -1,0 +1,20 @@
+h1 Edit articles
+label Edit Title
+input(type='text' name='newTitle')
+br
+br
+label Edit Overview
+input(type='text' name='newOverview')
+br
+br
+label Edit Article
+textarea(name='newArticle')
+br
+br
+label Edit Artict Type
+select(name='category')
+	each category in categories
+		option(value=category.id name='categoryType') #{category.category}
+br
+br
+input(type='submit' name='submit')

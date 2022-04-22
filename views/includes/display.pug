@@ -1,0 +1,5 @@
+ul(class="articleList")
+	each article in articles
+		li
+			a(href='/singleDisplay/'+ article.id) #{article.title}
+		li #{article.overview}

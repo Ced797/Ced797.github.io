@@ -1,0 +1,61 @@
+doctype html
+head
+h1 Yay a quiz... wait I thougt I hated these
+.container
+  form
+    .mySlides
+      label Question_1
+      p Answer choice
+      input#q1(type='checkbox' value='1')
+      br
+      p Answer choice
+      input#q1a(type='checkbox' value='2')
+      br
+      br
+      p Answer choice
+      input#q1b(type='checkbox' value='3')
+      br
+      br
+    .mySlides
+      label Question_2
+      input#q2(type='checkbox' value='1')
+      input#q2a(type='checkbox' value='2')
+      input#q2b(type='checkbox' value='3')
+    br
+    br
+    .mySlides
+      label Question_3
+      input#q3(type='checkbox' value='1')
+      input#q3a(type='checkbox' value='2')
+      input#q3b(type='checkbox' value='3')
+    br
+    br
+    .mySlides
+      label Question_4
+      input#q4(type='checkbox' value='1')
+      input#q4a(type='checkbox' value='2')
+      input#q4b(type='checkbox' value='3')
+    br
+    br
+    .mySlides
+      label Question_5
+      input#q5(type='checkbox' value='1')
+      input#q5a(type='checkbox' value='2')
+      input#q5b(type='checkbox' value='3')
+    br
+    br
+    .mySlides
+      label Question_6
+      input#q6(type='checkbox' value='1')
+      input#q6a(type='checkbox' value='2')
+      input#q6b(type='checkbox' value='3')
+    br
+    br
+    a.prev(onclick='plusSlides(-1)') <
+    br
+    br
+    a.next(onclick='plusSlides(1)') >
+    br
+    br
+    input(type='submit' onclick='score()')
+script(src='scripts/script.js')

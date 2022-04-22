@@ -1,0 +1,22 @@
+const {Sequelize, Model} = require('sequelize');
+const sequelize = require('./../sequelize.js');
+//const Link =  require('./articleLinks.js');
+const Article = require('./articles.js');
+
+class Article_category extends Model {}
+Article_category.init({
+	id:{
+		type:Sequelize.INTEGER,
+		primaryKey:true,
+		autoIncrement:true,
+		allowNull:false
+	},
+	category:{
+		type:Sequelize.TEXT,
+		allonNull:false,
+		defaultvalue:false
+	}
+},{sequelize, modelName:'Article_category'});
+
+Article_category.hasOne(Article);
+module.exports = Article_category;

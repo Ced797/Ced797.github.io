@@ -1,0 +1,14 @@
+head
+  title Inserting articles
+form(method='POST')
+  label Title of the Article
+  input(type='text' name='title')
+  br
+  br
+  label Type your article
+  textarea(name='article')
+  br
+  br
+  label Links
+  input(type='text' name='link')
+  input(type="submit")
